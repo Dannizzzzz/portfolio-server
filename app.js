@@ -11,8 +11,8 @@ app.use('/', router);
 app.get('/', (req, res) => {
   res.send('Hello World');
 });
-// var port = process.env.PORT || 5001;
-app.listen(5001, () => console.log('Server Running'));
+var port = process.env.PORT || 5001;
+app.listen(port, () => console.log('Server Running'));
 console.log(process.env.EMAIL_USER);
 console.log(process.env.EMAIL_PASS);
 
